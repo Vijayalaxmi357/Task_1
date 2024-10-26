@@ -1,3 +1,4 @@
+
 # RISCV_VSD_SquadronMini
 ## Lab exercises of RISCV workshop by Kunal Ghosh
 ## Instructor : Kunal Ghosh
@@ -13,15 +14,20 @@
 - Install Oracle Virtual Box, VMBox<br/>
 - Launch Virtual Machine on VMBox<br/>
 - Attach the VDI file to the Virtual Machine instance in VMBox<b>
+-open the Virtual oracle<br>
+![image](C:\Users\vijay\Pictures\Screenshots\Screenshot 2024-10-26 120841.png)
+click on  "Show"<br>
+ you will Enter to "ubuntu"<br>
+ ![image](C:\Users\vijay\Pictures\Screenshots\Screenshot 2024-10-26 121056.png)
+ -Right click and click on "open terminal"<br>
 
-### Step 2: Install Leafpad - the word editor
-    $    sudo apt install leafpad <br/>
+### Step 2: Type the word "gedit"-a word "gedit" is editor
 
 ### TASK 1A - COMPILE AND EXECUTE A SIMPLE C CODE USING GCC COMPILER
     $   cd <br/>                           Navigate to home directory:<br>
-    $   leafpad filename.c & <br/>         This opens a blank file with filename.c, type the c code
+    $   gedit filename.c & <br/>         This opens a blank file with filename.c, type the c code
     
-![image](https://github.com/user-attachments/assets/3a04abb4-3369-4564-bcf8-d73b6b845152)
+![image](C:\Users\vijay\Pictures\gedit.png)
 Save the file<br> 
 Come back to terminal<br>
 Press entre to come to the home prompt<br>
@@ -29,9 +35,17 @@ To see the results Run the following commands
 
     $    gcc filename.c <br>
     $    ./a.out <br>
-![image](https://github.com/user-attachments/assets/8310c8c6-46cf-4652-96c1-e6174aa564ae)
+![image](C:\Users\vijay\Pictures\Task1.png)
 Change the value of n in filename.c <br>
 Recompile and see the results <br>
-![image](https://github.com/user-attachments/assets/0f5ec3fa-ba7e-4e16-9324-6fc827f94570)
+To see the code in terminal type as cat sum1ton.c<br>
+![image](C:\Users\vijay\Pictures\Screenshots\Screenshot 2024-10-22 125222.png)
+To get riscv assembly code the command is<br>
+![image](C:\Users\vijay\Pictures\Screenshots\Screenshot 2024-10-22 233733.png)
+for only required code type "less" and search for" /main"<br>
+![image](C:\Users\vijay\Pictures\assembly.png)
+
+
+
 
 

@@ -1,6 +1,6 @@
 
 
-# RISCV_VSD_SquadronMini
+# RISCV_VSD_SquadronMini internship
 ## Lab exercises of RISCV workshop by Kunal Ghosh
 ## Instructor : Kunal Ghosh
 
@@ -29,6 +29,7 @@ click on  "Show"<br>
     $   gedit filename.c & <br/>         This opens a blank file with filename.c, type the c code
     
 ![oracle VMBox](https://github.com/user-attachments/assets/ec510c91-5706-4d7f-abd5-e825ae070f5e)
+![login](https://github.com/user-attachments/assets/e4a40158-1875-4eb2-adc1-0f23a57f1025)
 
 Save the file<br> 
 Come back to terminal<br>
@@ -37,15 +38,21 @@ To see the results Run the following commands
 
     $    gcc filename.c <br>
     $    ./a.out <br>
-![image](C:\Users\vijay\Pictures\Task1.png)
+![open terminal](https://github.com/user-attachments/assets/0240e637-7e73-43dc-b563-30a3ee793034)
+![gedit](https://github.com/user-attachments/assets/a6e3c9c5-35de-45fa-8165-34ea4e4307de)
+
 Change the value of n in filename.c <br>
 Recompile and see the results <br>
 To see the code in terminal type as cat sum1ton.c<br>
-![image](C:\Users\vijay\Pictures\Screenshots\Screenshot 2024-10-22 125222.png)
+![cat sum1ton](https://github.com/user-attachments/assets/615382a8-e491-41a4-affc-dbbf6eb0daa4)
+
 To get riscv assembly code the command is<br>
-![image](C:\Users\vijay\Pictures\Screenshots\Screenshot 2024-10-22 233733.png)
+![riscv](https://github.com/user-attachments/assets/a0d99dc6-5f12-4d19-92d0-357dc59c03b9)
+
 for only required code type "less" and search for" /main"<br>
-![image](C:\Users\vijay\Pictures\assembly.png)
+![assembly](https://github.com/user-attachments/assets/5451aea1-152f-4bed-91b2-22f2c9cfb19e)
+
+![req assembly code](https://github.com/user-attachments/assets/ccbcd4eb-c58c-4d16-ba64-d64122d4416e)
 
 
 

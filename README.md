@@ -28,7 +28,8 @@ click on  "Show"<br>
     $   cd <br/>                           Navigate to home directory:<br>
     $   gedit filename.c & <br/>         This opens a blank file with filename.c, type the c code
     
-![image](C:\Users\vijay\Pictures\gedit.png)
+![oracle VMBox](https://github.com/user-attachments/assets/ec510c91-5706-4d7f-abd5-e825ae070f5e)
+
 Save the file<br> 
 Come back to terminal<br>
 Press entre to come to the home prompt<br>

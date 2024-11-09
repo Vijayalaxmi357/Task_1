@@ -1,4 +1,3 @@
-
 ## TASK-1: 
 ## A: Write a simple C code and compile it with gcc comipler. 
 ## B: Compile the same code with RISCV comipler to generate the assembly code for the same. Further Evaluate RISCV assembly code for the sample C code with two different options of comiplation.
@@ -47,21 +46,21 @@ for only required code type "less" and search for" /main"<br>
 
 ![req assembly code](https://github.com/user-attachments/assets/ccbcd4eb-c58c-4d16-ba64-d64122d4416e)
 
-#### Task2
+# Task2
 ## Spike simulation and observation with -O1 and -Ofast and bulding a simple application using c code using Risc-v Spike
 
-# Simulation using spike application <br>
+## Simulation using spike application <br>
 Type the command spike -d pk sum1ton.c<br>
 (![spike 1](https://github.com/user-attachments/assets/53dd047c-dbd9-43e3-9b07-352736fee6b7)
 
 
-# Debuggig using spike we get<br> 
+## Debuggig using spike we get<br> 
 ![spike simulation](https://github.com/user-attachments/assets/72473a0d-ee89-458e-9535-678bc376b069)
 
-# Simple application using c code with spike simulaion
+## Simple application using c code with spike simulaion
 ![c code](https://github.com/user-attachments/assets/360609f5-8721-404f-9bcd-89d0535cc7bf)
 
-# Assembly code
+## Assembly code
 ![spike 2](https://github.com/user-attachments/assets/2812371d-dcf2-4a28-acc7-5a951dd25701)
 
 ![spike3](https://github.com/user-attachments/assets/2eff46d3-37af-4ee7-b7ef-bece33dbe1fe)

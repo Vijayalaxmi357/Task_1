@@ -1,11 +1,4 @@
 
-
-# RISCV_VSD_SquadronMini internship
-## Lab exercises of RISCV workshop by Kunal Ghosh
-## Instructor : Kunal Ghosh
-
-### PRE-REQUISITE: Installing the required applications for the workshop - Virtual Box, Ubuntu on VBBOX and VDI files
-
 ## TASK-1: 
 ## A: Write a simple C code and compile it with gcc comipler. 
 ## B: Compile the same code with RISCV comipler to generate the assembly code for the same. Further Evaluate RISCV assembly code for the sample C code with two different options of comiplation.
@@ -53,6 +46,19 @@ for only required code type "less" and search for" /main"<br>
 ![assembly](https://github.com/user-attachments/assets/5451aea1-152f-4bed-91b2-22f2c9cfb19e)
 
 ![req assembly code](https://github.com/user-attachments/assets/ccbcd4eb-c58c-4d16-ba64-d64122d4416e)
+
+### Task2
+## Spike simulation and observation with -O1 and -Ofast and bulding a simple application using c code using Risc-v Spike
+
+Simulation using spike application <br>
+Type the command spike -d pk sum1ton.c<br>
+!(![spike 1](https://github.com/user-attachments/assets/53dd047c-dbd9-43e3-9b07-352736fee6b7)
+)
+
+Debuggig using spike we get 
+![spike simulation](https://github.com/user-attachments/assets/72473a0d-ee89-458e-9535-678bc376b069)
+
+
 
 
 

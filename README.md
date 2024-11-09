@@ -57,6 +57,14 @@ Type the command spike -d pk sum1ton.c<br>
 
 Debuggig using spike we get 
 ![spike simulation](https://github.com/user-attachments/assets/72473a0d-ee89-458e-9535-678bc376b069)
+Simple application using c code with spike simulaion
+![c code](https://github.com/user-attachments/assets/360609f5-8721-404f-9bcd-89d0535cc7bf)
+Assembly code
+![spike 2](https://github.com/user-attachments/assets/2812371d-dcf2-4a28-acc7-5a951dd25701)
+![spike3](https://github.com/user-attachments/assets/2eff46d3-37af-4ee7-b7ef-bece33dbe1fe)
+
+
+
 
 
 

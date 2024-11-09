@@ -66,10 +66,7 @@ Type the command spike -d pk sum1ton.c<br>
 
 ![spike3](https://github.com/user-attachments/assets/2eff46d3-37af-4ee7-b7ef-bece33dbe1fe)
 
-# Task3
-## RISC-v Instruction types(R,I,S,B,U,J)
-31 25 24 20 19 15 14 12 11 7 6 0
-funct7 rs2 rs1 funct3 rd opcode R-Type
+
 
 
 

@@ -1,3 +1,4 @@
+
 ## TASK-1: 
 ## A: Write a simple C code and compile it with gcc comipler. 
 ## B: Compile the same code with RISCV comipler to generate the assembly code for the same. Further Evaluate RISCV assembly code for the sample C code with two different options of comiplation.
@@ -16,7 +17,7 @@ click on  "Show"<br>
 
 ### Step 2: Type the word "gedit"-a word "gedit" is editor
 
-### TASK 1A - COMPILE AND EXECUTE A SIMPLE C CODE USING GCC COMPILER
+### COMPILE AND EXECUTE A SIMPLE C CODE USING GCC COMPILER
     $   cd <br/>                           Navigate to home directory:<br>
     $   gedit filename.c & <br/>         This opens a blank file with filename.c, type the c code
     
@@ -51,7 +52,7 @@ for only required code type "less" and search for" /main"<br>
 
 ## Simulation using spike application <br>
 Type the command spike -d pk sum1ton.c<br>
-(![spike 1](https://github.com/user-attachments/assets/53dd047c-dbd9-43e3-9b07-352736fee6b7)
+![spike 1](https://github.com/user-attachments/assets/53dd047c-dbd9-43e3-9b07-352736fee6b7)
 
 
 ## Debuggig using spike we get<br> 
@@ -64,6 +65,11 @@ Type the command spike -d pk sum1ton.c<br>
 ![spike 2](https://github.com/user-attachments/assets/2812371d-dcf2-4a28-acc7-5a951dd25701)
 
 ![spike3](https://github.com/user-attachments/assets/2eff46d3-37af-4ee7-b7ef-bece33dbe1fe)
+
+# Task3
+## RISC-v Instruction types(R,I,S,B,U,J)
+31 25 24 20 19 15 14 12 11 7 6 0
+funct7 rs2 rs1 funct3 rd opcode R-Type
 
 
 

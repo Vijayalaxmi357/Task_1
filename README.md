@@ -5,6 +5,7 @@
 ### Instructor: Kunal Ghosh
 ### Student Name: Vijayalaxmi</li>
 ### College Name:B.M.S college of engineering
+<details>
  <summary>
  <h2> TASK-1 </h2> 
 <h3>Installation of RISC-V toolchain using VDI. Uploading the snapshot of complied code and RISC-V Objdmp on GitHub.</h3>
@@ -91,3 +92,11 @@ Type the command spike -d pk sum1ton.c<br>
 
 
 ![image](https://github.com/user-attachments/assets/42f41b10-d5a4-472b-9e47-019becd17fe7)
+
+
+
+
+
+
+
+

@@ -91,7 +91,7 @@ Type the command spike -d pk sum1ton.c<br>
 
 <details>
  <summary>
- <h2> TASK-3</h2> 
+ <h2> TASK-3</h2> <br>
 <h3> 1.RISC-V instruction types</h3><br>
 <h3> 2.Identifying 15 unique RISC-V instructions from riscv-objdmp of application code</h3><br>
 <h3> 3.Identifying exact 32-bit instruction code in the instruction type format for 15 unique instructions</h3><br>

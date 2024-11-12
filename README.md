@@ -5,12 +5,11 @@
 ### Instructor: Kunal Ghosh
 ### Student Name: Vijayalaxmi</li>
 ### College Name:B.M.S college of engineering
-<details>
  <summary>
  <h2> TASK-1 </h2> 
 <h3>Installation of RISC-V toolchain using VDI. Uploading the snapshot of complied code and RISC-V Objdmp on GitHub.</h3>
  </summary>
- 
+## TASK-1: 
 ## A: Write a simple C code and compile it with gcc comipler. 
 ## B: Compile the same code with RISCV comipler to generate the assembly code for the same. Further Evaluate RISCV assembly code for the sample C code with two different options of comiplation.
 
@@ -58,8 +57,12 @@ for only required code type "less" and search for" /main"<br>
 
 ![req assembly code](https://github.com/user-attachments/assets/ccbcd4eb-c58c-4d16-ba64-d64122d4416e)
 
-# Task2
-## Spike simulation and observation with -O1 and -Ofast and bulding a simple application using c code using Risc-v Spike
+<details>
+ <summary>
+ <h2> TASK-2</h2> 
+<h3>Spike simulation and observation with -O1 and -Ofast and bulding a simple application using c code using Risc-v Spike</h3>
+ </summary>
+
 
 ## Simulation using spike application <br>
 Type the command spike -d pk sum1ton.c<br>
@@ -77,21 +80,14 @@ Type the command spike -d pk sum1ton.c<br>
 
 ![spike3](https://github.com/user-attachments/assets/2eff46d3-37af-4ee7-b7ef-bece33dbe1fe)<hr>
 
-# Task3
+<details>
+ <summary>
+ <h2> TASK-2</h2> 
+<h3>## RISC-V instruction types</h3>
+ </summary>
 
-## RISC-V instruction types
+
 ## R Type instruction set
 
 
 ![image](https://github.com/user-attachments/assets/42f41b10-d5a4-472b-9e47-019becd17fe7)
-
-
-
-
-
-
-
-
-
-
-

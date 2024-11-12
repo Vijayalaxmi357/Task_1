@@ -100,44 +100,10 @@ Type the command spike -d pk sum1ton.c<br>
 <li>
 <oi>
  R Type instruction set</oi>
-
-
-
-
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RISC-V Instruction Formats</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-        }
-        th {
-            background-color: #f2f2f2;
-            text-align: left;
-        }
-        .code-block {
-            background-color: #f4f4f4;
-            padding: 10px;
-            font-family: monospace;
-            border-radius: 5px;
-            margin: 10px 0;
-        }
-    </style>
+  RISC-V Instruction Formats
+    
 </head>
 <body>
 
@@ -274,7 +240,8 @@ Type the command spike -d pk sum1ton.c<br>
         <td>opcode, rd, imm[20|10:1|11|19:12]</td>
     </tr>
 </table>
-![image](https://github.com/user-attachments/assets/42f41b10-d5a4-472b-9e47-019becd17fe7)
+![image](https://github.com/user-attachments/assets/0fabcf96-0984-4500-a5a3-3e2ad0356c05)
+
 
 <p>These formats provide a consistent structure across instruction types, making RISC-V a simple and modular architecture suitable for a wide range of applications.</p>
 

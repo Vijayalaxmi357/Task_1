@@ -102,9 +102,6 @@ Type the command spike -d pk sum1ton.c<br>
  R Type instruction set</oi>
 
 
-
-![image](https://github.com/user-attachments/assets/42f41b10-d5a4-472b-9e47-019becd17fe7)
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -236,6 +233,8 @@ Type the command spike -d pk sum1ton.c<br>
 </ul>
 <p><strong>Example instruction:</strong> JAL rd, offset</p>
 
+![image](https://github.com/user-attachments/assets/42f41b10-d5a4-472b-9e47-019becd17fe7)
+
 <h2>Summary Table</h2>
 <table>
     <tr>
@@ -279,6 +278,7 @@ Type the command spike -d pk sum1ton.c<br>
 
 </body>
 </html>
+
 
 </details>
 

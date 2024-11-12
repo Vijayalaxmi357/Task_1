@@ -91,7 +91,7 @@ Type the command spike -d pk sum1ton.c<br>
 
 <details>
  <summary>
- <h2> TASK-3</h2> <br>
+ <h2> TASK-3</h2> 
 <h3> 1.RISC-V instruction types</h3><br>
 <h3> 2.Identifying 15 unique RISC-V instructions from riscv-objdmp of application code</h3><br>
 <h3> 3.Identifying exact 32-bit instruction code in the instruction type format for 15 unique instructions</h3><br>
@@ -356,14 +356,136 @@ Type the command spike -d pk sum1ton.c<br>
   </table>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RISC-V Instructions with 32-Bit Encodings</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+    <html>
+      <h2>Exact 32-bit instruction code in the instruction type format for 15 unique instructions.And  32 bit pattern of instruction </h2><br>
+      <h4>1.add a0, a1, a2</h4><br>
+      <ul>
+      <li>Type:R</li><br>
+      <li>32-bit pattern:0000000 00010 00001 000 01000 0110011</li><br>
+      <li>R-type: opcode 0110011, funct3 000, funct7 0000000</li>
+      </ul><br>
+      <h4>2.sub a0, a1, a2</h4><br>
+      <ul>
+      <li>Type:R</li><br>
+      <li>32 bit pattern:0100000 00010 00001 000 01000 0110011</li><br>
+      <li>R-type: opcode 0110011, funct3 000, funct7 0100000</li><br>
+    </ul><br>
+      <h4><b>3.jal ra, label</b></h4><br>
+      <ul>
+      <li><b>Type:</b>J</li><br>
+      <li><b>32-bit pattern:</b>00000000000000000000 00001 1101111</li><br>
+      <li><b>J-type:</b> opcode 1101111</li><br>
+      </ul><br>
+      <li>beq a0, a1, label</li>
+      <li>Type:B</td>
+      <li>32-bit pattern:0000000 00001 00010 000 0000010 1100011</li>
+      <li>B-type: opcode 1100011, funct3 000</li>
+    </ul><br>
+    <ul>
+      <li>bne a0, a1, label</li>
+      <li>Type:B</li>
+      <li>32-bit pattern:0000000 00001 00010 001 0000010 1100011</li>
+      <li>B-type: opcode 1100011, funct3 001</li>
+    </ul><br>
+    <ul>
+      <li>lw a0, 0(sp)</li>
+      <li>Type:I</li>
+      <li>32-bit pattern:000000000000 00010 010 00001 0000011</li>
+      <li>I-type: opcode 0000011, funct3 010</li>
+    </ul><br>
+    <ul>
+      <li>sw a0, 0(sp)</li>
+      <li>Type:S</li>
+      <li>32-bit pattern:0000000 00001 00010 010 0000010 0100011</li>
+      <li>S-type: opcode 0100011, funct3 010</li>
+    </ul><br>
+    <ul>
+      <li>slli a0, a0, 1</li>
+      <li>Type:I</li>
+      <li>32-bit pattern:0000000 00001 00001 001 00010 0010011</li>
+      <li>I-type: opcode 0010011, funct3 001</li>
+    </tr><br>
+    <ul>
+      <li>srli a0, a0, 1</li>
+      <li>Type:I</li>
+      <li>32-bit pattern:0000000 00001 00001 101 00010 0010011</li>
+      <li>I-type: opcode 0010011, funct3 101</li>
+    </ul><br>
+    <ul>
+      <li>andi a0, a0, 1</li>
+      <li>Type:I</li>
+      <li>32-bit pattern:000000000001 00001 111 00010 0010011</li>
+      <li>I-type: opcode 0010011, funct3 111</li>
+    </ul><br>
+    <ul>
+      <li>ori a0, a0, 1</li>
+      <li>Type:I</li>
+      <li>32-bit pattern:000000000001 00001 110 00010 0010011</li>
+      <li>I-type: opcode 0010011, funct3 110</li>
+    </ul><br>
+    <ul>
+      <li>li a0,0</li>
+      <li>Type:I</li>
+      <li>32-bit pattern:000000000000 00000 000 00001 0010011</li>
+      <li>I-type: opcode 0010011, funct3 000</li>
+    </ul><br>
+    <ul>
+      <li>li a1,0</li>
+      <li>Type:I</li>
+      <li>32-bit pattern:000000000000 00000 000 00010 0010011</li>
+      <li>I-type: opcode 0010011, funct3 000</li>
+    </ul><br>
+    <ul>
+      <li>ret (jalr x0, ra, 0)</li>
+      <li>Type:I</td>
+      <li>32-bit pattern:000000000000 00001 000 00000 1100111</li>
+      <li>I-type: opcode 1100111, funct3 000</li>
+    </ul><br>
+    <ul>
+      <li><b>auipc t0, 4096</b></li>
+      <li><b>Type:</b>U</li>
+      <li><b>32-bit pattern:</b>000000000001 00000 00000 0010111</li>
+      <li><b>U-type:</b> opcode 0010111</li>
+      </ul>
+</body>
+</html>
+
+</details><br><hr>
+<details>
+ <summary>
+ <h2> TASK-4</h2> 
+<h3>Functional simulation and waveform using RISC-V verilog netlist and test bench  snapshots.</h3>
+ </summary>
 
 
-</details>
 
 
 
-
-
+ </details>
 
 
 

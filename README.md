@@ -1,5 +1,4 @@
 
-
  # VSDSquadronMini Research Internship - 20th October Cohert
  
 <h2>The program is based on RISC-V architecture and uses open-source tools to teach people about VLSI and RISC-V</h2><br>
@@ -104,7 +103,7 @@ Type the command spike -d pk sum1ton.c<br>
 
 
 
-![image](https://github.com/user-attachments/assets/42f41b10-d5a4-472b-9e47-019becd17fe7)
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -275,6 +274,7 @@ Type the command spike -d pk sum1ton.c<br>
         <td>opcode, rd, imm[20|10:1|11|19:12]</td>
     </tr>
 </table>
+![image](https://github.com/user-attachments/assets/42f41b10-d5a4-472b-9e47-019becd17fe7)
 
 <p>These formats provide a consistent structure across instruction types, making RISC-V a simple and modular architecture suitable for a wide range of applications.</p>
 
@@ -400,73 +400,74 @@ Type the command spike -d pk sum1ton.c<br>
       <li><b>32-bit pattern:</b>00000000000000000000 00001 1101111</li><br>
       <li><b>J-type:</b> opcode 1101111</li><br>
       </ul><br>
-      <li>beq a0, a1, label</li>
-      <li>Type:B</td>
+      <h4>4.beq a0, a1, label</h4>
+      <ul>
+      <li>Type:B</li>
       <li>32-bit pattern:0000000 00001 00010 000 0000010 1100011</li>
       <li>B-type: opcode 1100011, funct3 000</li>
     </ul><br>
+      <h4>5.bne a0, a1, label</h4>
     <ul>
-      <li>bne a0, a1, label</li>
       <li>Type:B</li>
       <li>32-bit pattern:0000000 00001 00010 001 0000010 1100011</li>
       <li>B-type: opcode 1100011, funct3 001</li>
     </ul><br>
+     <h4>6.lw a0, 0(sp)</h4>
     <ul>
-      <li>lw a0, 0(sp)</li>
       <li>Type:I</li>
       <li>32-bit pattern:000000000000 00010 010 00001 0000011</li>
       <li>I-type: opcode 0000011, funct3 010</li>
     </ul><br>
+    <h4>7.sw a0, 0(sp)</h4>
     <ul>
-      <li>sw a0, 0(sp)</li>
       <li>Type:S</li>
       <li>32-bit pattern:0000000 00001 00010 010 0000010 0100011</li>
       <li>S-type: opcode 0100011, funct3 010</li>
     </ul><br>
+    <h4>8.slli a0, a0, 1</h4>
     <ul>
-      <li>slli a0, a0, 1</li>
       <li>Type:I</li>
       <li>32-bit pattern:0000000 00001 00001 001 00010 0010011</li>
       <li>I-type: opcode 0010011, funct3 001</li>
     </tr><br>
+    <h4>9.srli a0, a0, 1</h4>
     <ul>
-      <li>srli a0, a0, 1</li>
       <li>Type:I</li>
       <li>32-bit pattern:0000000 00001 00001 101 00010 0010011</li>
       <li>I-type: opcode 0010011, funct3 101</li>
     </ul><br>
+     <h4>10.andi a0, a0, 1</h4>
     <ul>
-      <li>andi a0, a0, 1</li>
       <li>Type:I</li>
       <li>32-bit pattern:000000000001 00001 111 00010 0010011</li>
       <li>I-type: opcode 0010011, funct3 111</li>
     </ul><br>
+      <h4>11.ori a0, a0, 1</h4>
     <ul>
-      <li>ori a0, a0, 1</li>
       <li>Type:I</li>
       <li>32-bit pattern:000000000001 00001 110 00010 0010011</li>
       <li>I-type: opcode 0010011, funct3 110</li>
     </ul><br>
+    <h4>12.li a0,0</h4>
     <ul>
-      <li>li a0,0</li>
       <li>Type:I</li>
       <li>32-bit pattern:000000000000 00000 000 00001 0010011</li>
       <li>I-type: opcode 0010011, funct3 000</li>
     </ul><br>
+    <h4>13.li a1,0</h4>
     <ul>
-      <li>li a1,0</li>
       <li>Type:I</li>
       <li>32-bit pattern:000000000000 00000 000 00010 0010011</li>
       <li>I-type: opcode 0010011, funct3 000</li>
     </ul><br>
+     <h4>14.ret (jalr x0, ra, 0)</h4>
     <ul>
-      <li>ret (jalr x0, ra, 0)</li>
       <li>Type:I</td>
       <li>32-bit pattern:000000000000 00001 000 00000 1100111</li>
       <li>I-type: opcode 1100111, funct3 000</li>
     </ul><br>
+    <h4><b>15.auipc t0, 4096</b></h4>
     <ul>
-      <li><b>auipc t0, 4096</b></li>
       <li><b>Type:</b>U</li>
       <li><b>32-bit pattern:</b>000000000001 00000 00000 0010111</li>
       <li><b>U-type:</b> opcode 0010111</li>

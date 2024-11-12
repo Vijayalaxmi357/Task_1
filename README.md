@@ -57,6 +57,7 @@ for only required code type "less" and search for" /main"<br>
 ![assembly](https://github.com/user-attachments/assets/5451aea1-152f-4bed-91b2-22f2c9cfb19e)
 
 ![req assembly code](https://github.com/user-attachments/assets/ccbcd4eb-c58c-4d16-ba64-d64122d4416e)
+</details>
 
 <details>
  <summary>
@@ -80,10 +81,11 @@ Type the command spike -d pk sum1ton.c<br>
 ![spike 2](https://github.com/user-attachments/assets/2812371d-dcf2-4a28-acc7-5a951dd25701)
 
 ![spike3](https://github.com/user-attachments/assets/2eff46d3-37af-4ee7-b7ef-bece33dbe1fe)<hr>
+</details>
 
 <details>
  <summary>
- <h2> TASK-2</h2> 
+ <h2> TASK-3</h2> 
 <h3>## RISC-V instruction types</h3>
  </summary>
 
@@ -92,7 +94,7 @@ Type the command spike -d pk sum1ton.c<br>
 
 
 ![image](https://github.com/user-attachments/assets/42f41b10-d5a4-472b-9e47-019becd17fe7)
-
+</details>
 
 
 

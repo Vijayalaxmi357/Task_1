@@ -1,4 +1,5 @@
 
+
  # VSDSquadronMini Research Internship - 20th October Cohert
  
 <h2>The program is based on RISC-V architecture and uses open-source tools to teach people about VLSI and RISC-V</h2><br>
@@ -101,6 +102,9 @@ Type the command spike -d pk sum1ton.c<br>
 <oi>
  R Type instruction set</oi>
 
+
+
+![image](https://github.com/user-attachments/assets/42f41b10-d5a4-472b-9e47-019becd17fe7)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -233,8 +237,6 @@ Type the command spike -d pk sum1ton.c<br>
 </ul>
 <p><strong>Example instruction:</strong> JAL rd, offset</p>
 
-![image](https://github.com/user-attachments/assets/42f41b10-d5a4-472b-9e47-019becd17fe7)
-
 <h2>Summary Table</h2>
 <table>
     <tr>
@@ -278,10 +280,85 @@ Type the command spike -d pk sum1ton.c<br>
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RISC-V Instructions</title>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <th>Instruction</th>
+      <th>32-Bit Encoding</th>
+    </tr>
+    <tr>
+      <td>li a0,0</td>
+      <td>00000513</td>
+    </tr>
+    <tr>
+      <td>li a1,0</td>
+      <td>00000593</td>
+    </tr>
+    <tr>
+      <td>li a2,0</td>
+      <td>00000613</td>
+    </tr>
+    <tr>
+      <td>ret</td>
+      <td>00008067</td>
+    </tr>
+    <tr>
+      <td>add a0, a1, a2</td>
+      <td>00b50533</td>
+    </tr>
+    <tr>
+      <td>sub a0, a1, a2</td>
+      <td>40b50533</td>
+    </tr>
+    <tr>
+      <td>jal ra, label</td>
+      <td>0000006f</td>
+    </tr>
+    <tr>
+      <td>beq a0, a1, label</td>
+      <td>00050663</td>
+    </tr>
+    <tr>
+      <td>bne a0, a1, label</td>
+      <td>00050663</td>
+    </tr>
+    <tr>
+      <td>lw a0, 0(sp)</td>
+      <td>00020283</td>
+    </tr>
+    <tr>
+      <td>sw a0, 0(sp)</td>
+      <td>00022023</td>
+    </tr>
+    <tr>
+      <td>slli a0, a0, 1</td>
+      <td>00151513</td>
+    </tr>
+    <tr>
+      <td>srli a0, a0, 1</td>
+      <td>00155513</td>
+    </tr>
+    <tr>
+      <td>andi a0, a0, 1</td>
+      <td>00156513</td>
+    </tr>
+    <tr>
+      <td>ori a0, a0, 1</td>
+      <td>00157513</td>
+    </tr>
+  </table>
+</body>
+</html>
 
 
 </details>
-
 
 
 

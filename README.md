@@ -452,47 +452,52 @@ Type the command spike -d pk sum1ton.c<br>
  <h2> TASK-4</h2> 
 <h3>Functional simulation and waveform using RISC-V verilog netlist and test bench  snapshots.</h3>
  </summary>
- </details>
+ </details><br><hr>
 
 <details>
  <summary>
  <h2> TASK-5</h2> 
 <h3>Object detector using ultrasonic sensor</h3>
  </summary>
-
-Overview
+ <h4>Overview</h4><br>
 The Object Detector project integrates an ultrasonic sensor with the CH32V003 RISC-V processor to detect nearby objects. By utilizing the ultrasonic sensor, the system can detect objects within its range and alert the user by switching on an LED. This project is designed for various applications, including obstacle detection, proximity sensing, and as a component in larger automated systems.
 
-Components Required
-1. Hardware
-CH32V003 RISC-V processor
-Ultrasonic sensor (HC-SR04)
-LED
-Power Supply
-Breadboard
-Jumper Wires
-2. Software
-VSCode
-PlatformIO
-Hardware Connections
-The ultrasonic sensor is connected to the VSDSquadron Mini as follows:
+<h4>Components Required</h4><br>
+<h5>1. Hardware</h5>
+<ul>
+<li>CH32V003 RISC-V processor</li>
+<li>Ultrasonic sensor (HC-SR04)</li>
+<li>LED</li>
+<li>Power Supply</li>
+<li>Breadboard</li>
+<li>Jumper Wires</li>
+</ul><br>
+<h5>2. Software</h5><br>
+<ul>
+<li>VSCode</li>
+<li>PlatformIO</li>
+</ul><br>
+<h4>Hardware Connections</h4><br>
+<h4>The ultrasonic sensor is connected to the VSDSquadron Mini as follows:</h4><br>
+<oi>
+<li>TRIG PIN to PD2 on VSDSquadron Mini</li>
+<li>ECHO PIN to PD4 on VSDSquadron Mini</li>
+<li>GND to GND on VSDSquadron Mini</li>
+<li>VCC to 3.3V on VSDSquadron Mini</li>
+</oi><br>
+<h4>How to Program</h4><br>
 
-TRIG PIN to PD2 on VSDSquadron Mini
-ECHO PIN to PD4 on VSDSquadron Mini
-GND to GND on VSDSquadron Mini
-VCC to 3.3V on VSDSquadron Mini
-How to Program
-Install PlatformIO Core : Ensure PlatformIO Core is installed on your system. Follow the installation guide provided by PlatformIO.
-Build and Upload Commands :
-Build the project: $ pio run
-Upload the firmware: $ pio run –target upload
-Clean build files: $ pio run –target clean
-API Reference
-USART_Printf_Init() : Initializes the USART peripheral for debugging and output.
-Delay_Ms() : Generates a millisecond delay, useful for timing and sensor control.
-GPIO_ReadInputDataBit() : Reads the state of an input pin.
-GPIO_WriteBit() : Sets or clears a specific output pin, used for controlling the LED and the ultrasonic sensor’s trigger.
-Code Snippet
+-Install PlatformIO Core : Ensure PlatformIO Core is installed on your system. Follow the installation guide provided by PlatformIO.
+-Build and Upload Commands :
+-Build the project: $ pio run
+-Upload the firmware: $ pio run –target upload
+-Clean build files: $ pio run –target clean<br>
+<h4>API Reference</h4>
+-USART_Printf_Init() : Initializes the USART peripheral for debugging and output.
+-Delay_Ms() : Generates a millisecond delay, useful for timing and sensor control.
+-GPIO_ReadInputDataBit() : Reads the state of an input pin.
+-GPIO_WriteBit() : Sets or clears a specific output pin, used for controlling the LED and the ultrasonic sensor’s trigger.
+-Code Snippet
 #include <ch32v00x.h>
 
 #include <debug.h>
@@ -572,7 +577,7 @@ Object Detection : Useful in parking assistance systems, robot obstacle avoidanc
 Security Systems : Employing ultrasonic sensors for motion detection in restricted areas.
 Distance Measurement : Accurate distance measurements for assembly line spacing, liquid level monitoring, and height measurement of objects.
 Liquid Level Detection : Using ultrasonic sensors to monitor the liquid level inside tanks, preventing unstable readings caused by wavy surfaces or bubbles.
-
+ </details>
 
 
 

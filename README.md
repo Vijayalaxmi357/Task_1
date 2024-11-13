@@ -487,17 +487,17 @@ The Object Detector project integrates an ultrasonic sensor with the CH32V003 RI
 </oi><br>
 <h4>How to Program</h4><br>
 
--Install PlatformIO Core : Ensure PlatformIO Core is installed on your system. Follow the installation guide provided by PlatformIO.
--Build and Upload Commands :
--Build the project: $ pio run
--Upload the firmware: $ pio run –target upload
+-Install PlatformIO Core : Ensure PlatformIO Core is installed on your system. Follow the installation guide provided by PlatformIO.<br>
+-Build and Upload Commands :<br>
+-Build the project: $ pio run<br>
+-Upload the firmware: $ pio run –target upload<br>
 -Clean build files: $ pio run –target clean<br>
 <h4>API Reference</h4>
--USART_Printf_Init() : Initializes the USART peripheral for debugging and output.
--Delay_Ms() : Generates a millisecond delay, useful for timing and sensor control.
--GPIO_ReadInputDataBit() : Reads the state of an input pin.
--GPIO_WriteBit() : Sets or clears a specific output pin, used for controlling the LED and the ultrasonic sensor’s trigger.
--Code Snippet
+-USART_Printf_Init() : Initializes the USART peripheral for debugging and output.<br>
+-Delay_Ms() : Generates a millisecond delay, useful for timing and sensor control.<br>
+-GPIO_ReadInputDataBit() : Reads the state of an input pin.<br>
+-GPIO_WriteBit() : Sets or clears a specific output pin, used for controlling the LED and the ultrasonic sensor’s trigger.<br>
+-Code Snippet<br>
 #include <ch32v00x.h>
 
 #include <debug.h>

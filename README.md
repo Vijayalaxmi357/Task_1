@@ -11,21 +11,26 @@
  <h2> TASK-1 </h2> 
 <h3>Installation of RISC-V toolchain using VDI. Uploading the snapshot of complied code and RISC-V Objdmp on GitHub.</h3>
  </summary>
-## TASK-1: 
-## A: Write a simple C code and compile it with gcc comipler. 
-## B: Compile the same code with RISCV comipler to generate the assembly code for the same. Further Evaluate RISCV assembly code for the sample C code with two different options of comiplation.
-
-## NECESSARY INSTALLATIONS
-### Step 1: Setting up the virtual environment to work on
-- Install Oracle Virtual Box, VMBox<br/>
-- Launch Virtual Machine on VMBox<br/>
-- Attach the VDI file to the Virtual Machine instance in VMBox<b>
--open the Virtual oracle<br>
+ <h3> NECESSARY INSTALLATIONS<h3>
+ <oi>
+<li>Step 1: Setting up the virtual environment to work on</li><br>
+<li>Install Oracle Virtual Box, VMBox</li><br>
+<li> Launch Virtual Machine on VMBox</li><br>
+<li>Attach the VDI file to the Virtual Machine instance in VMBox</li><br>
+<li>open the Virtual oracle<li></oi><br>
 ![image](C:\Users\vijay\Pictures\Screenshots\Screenshot 2024-10-26 120841.png)
 click on  "Show"<br>
  you will Enter to "ubuntu"<br>
  ![image](C:\Users\vijay\Pictures\Screenshots\Screenshot 2024-10-26 121056.png)
  -Right click and click on "open terminal"<br>
+ </details>
+<details>
+ <summary>
+ <h2> TASK-2 </h2> 
+<h3>Write a simple C code and compile it with gcc comipler. And Compile the same code with RISCV comipler to generate the assembly code for the same. Further Evaluate RISCV assembly code for the sample C code with two different options of comiplation.</h3>
+ </summary>
+
+
 
 ### Step 2: Type the word "gedit"-a word "gedit" is editor
 
@@ -64,7 +69,7 @@ for only required code type "less" and search for" /main"<br>
 
 <details>
  <summary>
- <h2> TASK-2</h2> 
+ <h2> TASK-3</h2> 
 <h3>Spike simulation and observation with -O1 and -Ofast and bulding a simple application using c code using Risc-v Spike</h3>
  </summary>
 
@@ -90,7 +95,7 @@ Type the command spike -d pk sum1ton.c<br>
 
 <details>
  <summary>
- <h2> TASK-3</h2> 
+ <h2> TASK-4</h2> <br>
 <h3> 1.RISC-V instruction types</h3><br>
 <h3> 2.Identifying 15 unique RISC-V instructions from riscv-objdmp of application code</h3><br>
 <h3> 3.Identifying exact 32-bit instruction code in the instruction type format for 15 unique instructions</h3><br>
@@ -102,7 +107,7 @@ Type the command spike -d pk sum1ton.c<br>
  R Type instruction set</oi>
 <html lang="en">
 <head>
-  RISC-V Instruction Formats
+    <title>RISC-V Instruction Formats</title>
     
 </head>
 <body>
@@ -240,8 +245,7 @@ Type the command spike -d pk sum1ton.c<br>
         <td>opcode, rd, imm[20|10:1|11|19:12]</td>
     </tr>
 </table>
-![image](https://github.com/user-attachments/assets/0fabcf96-0984-4500-a5a3-3e2ad0356c05)
-
+![image](https://github.com/user-attachments/assets/42f41b10-d5a4-472b-9e47-019becd17fe7)
 
 <p>These formats provide a consistent structure across instruction types, making RISC-V a simple and modular architecture suitable for a wide range of applications.</p>
 
@@ -448,12 +452,126 @@ Type the command spike -d pk sum1ton.c<br>
  <h2> TASK-4</h2> 
 <h3>Functional simulation and waveform using RISC-V verilog netlist and test bench  snapshots.</h3>
  </summary>
-
-
-
-
-
  </details>
+
+<details>
+ <summary>
+ <h2> TASK-5</h2> 
+<h3>Object detector using ultrasonic sensor</h3>
+ </summary>
+
+Overview
+The Object Detector project integrates an ultrasonic sensor with the CH32V003 RISC-V processor to detect nearby objects. By utilizing the ultrasonic sensor, the system can detect objects within its range and alert the user by switching on an LED. This project is designed for various applications, including obstacle detection, proximity sensing, and as a component in larger automated systems.
+
+Components Required
+1. Hardware
+CH32V003 RISC-V processor
+Ultrasonic sensor (HC-SR04)
+LED
+Power Supply
+Breadboard
+Jumper Wires
+2. Software
+VSCode
+PlatformIO
+Hardware Connections
+The ultrasonic sensor is connected to the VSDSquadron Mini as follows:
+
+TRIG PIN to PD2 on VSDSquadron Mini
+ECHO PIN to PD4 on VSDSquadron Mini
+GND to GND on VSDSquadron Mini
+VCC to 3.3V on VSDSquadron Mini
+How to Program
+Install PlatformIO Core : Ensure PlatformIO Core is installed on your system. Follow the installation guide provided by PlatformIO.
+Build and Upload Commands :
+Build the project: $ pio run
+Upload the firmware: $ pio run –target upload
+Clean build files: $ pio run –target clean
+API Reference
+USART_Printf_Init() : Initializes the USART peripheral for debugging and output.
+Delay_Ms() : Generates a millisecond delay, useful for timing and sensor control.
+GPIO_ReadInputDataBit() : Reads the state of an input pin.
+GPIO_WriteBit() : Sets or clears a specific output pin, used for controlling the LED and the ultrasonic sensor’s trigger.
+Code Snippet
+#include <ch32v00x.h>
+
+#include <debug.h>
+
+void GPIO_Config(void) {
+
+GPIO_InitTypeDef GPIO_InitStructure = {0};
+
+RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
+
+// Configure echo and trigger pins
+
+GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_4;
+
+GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+
+GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+// Configure trigger and LED pins
+
+GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2 | GPIO_Pin_3;
+
+GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+
+GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+
+GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+}
+
+int main(void) {
+
+uint8_t echo_status = 0;
+
+NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+
+SystemCoreClockUpdate();
+
+Delay_Init();
+
+GPIO_Config();
+
+while(1) {
+
+// Trigger ultrasonic sensor
+
+GPIO_WriteBit(GPIOD, GPIO_Pin_2, SET);
+
+Delay_Ms(10); // Trigger pulse width
+
+GPIO_WriteBit(GPIOD, GPIO_Pin_2, RESET);
+
+echo_status = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_4);
+
+if (echo_status == 1) {
+
+// Object detected, blink LED
+
+GPIO_WriteBit(GPIOD, GPIO_Pin_3, SET);
+
+Delay_Ms(2000); // LED on duration
+
+GPIO_WriteBit(GPIOD, GPIO_Pin_3, RESET);
+
+Delay_Ms(2000); // LED off duration
+
+}
+
+}
+
+}
+Working Principle
+The system operates by sending a short ultrasonic pulse (triggered by PD2) and listening for an echo (received on PD4). The presence of an object within the sensor’s range reflects the pulse back to the sensor, detected as a high signal on the ECHO pin. Upon detection, the processor activates an LED to alert the user of the detected object.
+
+Applications
+Object Detection : Useful in parking assistance systems, robot obstacle avoidance, and proximity detection for home automation.
+Security Systems : Employing ultrasonic sensors for motion detection in restricted areas.
+Distance Measurement : Accurate distance measurements for assembly line spacing, liquid level monitoring, and height measurement of objects.
+Liquid Level Detection : Using ultrasonic sensors to monitor the liquid level inside tanks, preventing unstable readings caused by wavy surfaces or bubbles.
 
 
 

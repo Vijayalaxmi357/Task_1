@@ -457,132 +457,172 @@ Type the command spike -d pk sum1ton.c<br>
 <details>
  <summary>
  <h2> TASK-5</h2> 
-<h3>Object detector using ultrasonic sensor</h3>
+<h3>2-bit comparator</h3>
  </summary>
- <h4>Overview</h4><br>
-The Object Detector project integrates an ultrasonic sensor with the CH32V003 RISC-V processor to detect nearby objects. By utilizing the ultrasonic sensor, the system can detect objects within its range and alert the user by switching on an LED. This project is designed for various applications, including obstacle detection, proximity sensing, and as a component in larger automated systems.
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-Bit Comparator Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .code-block {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
 
-<h4>Components Required</h4><br>
-<h5>1. Hardware</h5>
+<h1>2-Bit Comparator Project</h1>
+
+<h2>Overview</h2>
+<p>This project aims to design and implement a 2-bit comparator using the VSDSquadron Mini board. A 2-bit comparator is a digital circuit that compares two 2-bit binary numbers and indicates whether one number is greater than, less than, or equal to the other. The project involves designing the comparator logic using C programming in Visual Studio Code, setting up the hardware connections on a breadboard, and verifying the functionality through LEDs connected to the output.</p>
+
+<h2>Project Objective</h2>
+<p>The objective of this project is to:</p>
 <ul>
-<li>CH32V003 RISC-V processor</li>
-<li>Ultrasonic sensor (HC-SR04)</li>
-<li>LED</li>
-<li>Power Supply</li>
-<li>Breadboard</li>
-<li>Jumper Wires</li>
-</ul><br>
-<h5>2. Software</h5><br>
+    <li>Design a 2-bit comparator using C programming.</li>
+    <li>Implement the designed comparator on the VSDSquadron Mini board.</li>
+    <li>Verify the correct functionality of the comparator by using LEDs to display the comparison results.</li>
+    <li>Gain hands-on experience in digital circuit design, C programming, and hardware implementation.</li>
+</ul>
+
+<h2>Key Components</h2>
 <ul>
-<li>VSCode</li>
-<li>PlatformIO</li>
-</ul><br>
-<h4>Hardware Connections</h4><br>
-<h4>The ultrasonic sensor is connected to the VSDSquadron Mini as follows:</h4><br>
-<oi>
-<li>TRIG PIN to PD2 on VSDSquadron Mini</li>
-<li>ECHO PIN to PD4 on VSDSquadron Mini</li>
-<li>GND to GND on VSDSquadron Mini</li>
-<li>VCC to 3.3V on VSDSquadron Mini</li>
-</oi><br>
-<h4>How to Program</h4><br>
+    <li><strong>VSDSquadron Mini Board</strong>: The main microcontroller board used for processing and logic implementation.</li>
+    <li><strong>Breadboard and Jumper Wires</strong>: For building and testing the circuit.</li>
+    <li><strong>LEDs</strong>: To display the comparison results. This project requires 3 LEDs.</li>
+    <li><strong>Resistors</strong>: To limit the current to the LEDs. 220Ohm resistors are used in this project.</li>
+</ul>
 
--Install PlatformIO Core : Ensure PlatformIO Core is installed on your system. Follow the installation guide provided by PlatformIO.<br>
--Build and Upload Commands :<br>
--Build the project: $ pio run<br>
--Upload the firmware: $ pio run –target upload<br>
--Clean build files: $ pio run –target clean<br>
-<h4>API Reference</h4>
--USART_Printf_Init() : Initializes the USART peripheral for debugging and output.<br>
--Delay_Ms() : Generates a millisecond delay, useful for timing and sensor control.<br>
--GPIO_ReadInputDataBit() : Reads the state of an input pin.<br>
--GPIO_WriteBit() : Sets or clears a specific output pin, used for controlling the LED and the ultrasonic sensor’s trigger.<br>
--Code Snippet<br>
-#include <ch32v00x.h>
+<h2>Pin Configuration</h2>
+<table>
+    <tr>
+        <th>LED</th>
+        <th>VSD SQUADRON BOARD</th>
+    </tr>
+    <tr>
+        <td>LED1</td>
+        <td>PIN4 (PD4)</td>
+    </tr>
+    <tr>
+        <td>LED2</td>
+        <td>PIN5 (PD5)</td>
+    </tr>
+    <tr>
+        <td>LED3</td>
+        <td>PIN6 (PD6)</td>
+    </tr>
+</table>
 
-#include <debug.h>
+<h2>Functional Description</h2>
+<p>
+    <strong>A &gt; B</strong>: LED1 (Yellow color) lights up when <em>A</em> is greater than <em>B</em>.<br>
+    <strong>A &lt; B</strong>: LED2 (Red color) lights up when <em>A</em> is less than <em>B</em>.<br>
+    <strong>A = B</strong>: LED3 (Green color) lights up when both numbers are equal.
+</p>
+
+<h2>Truth Table of 2-Bit Comparator</h2>
+<table>
+    <tr>
+        <th>A1</th><th>A0</th><th>B1</th><th>B0</th><th>A &gt; B</th><th>A = B</th><th>A &lt; B</th>
+    </tr>
+    <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+    <tr><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+    <tr><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+    <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+    <tr><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+    <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+    <tr><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+    <tr><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+    <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+    <tr><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+    <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+    <tr><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+    <tr><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+    <tr><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+    <tr><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td></tr>
+    <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+</table>
+
+<h2>Code for Implementation of 2-Bit Comparator using VSDSquadron Mini Board</h2>
+<div class="code-block">
+<pre>
+#include &lt;ch32v00x.h&gt;
+#include &lt;debug.h&gt;
+#include &lt;stdio.h&gt;
+
+#define LED1_PIN GPIO_Pin_4 //yellow LED
+#define LED2_PIN GPIO_Pin_5 //red LED
+#define LED3_PIN GPIO_Pin_6 //green LED
+#define LED_PORT GPIOD
 
 void GPIO_Config(void) {
-
-GPIO_InitTypeDef GPIO_InitStructure = {0};
-
-RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
-
-// Configure echo and trigger pins
-
-GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_4;
-
-GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
-
-GPIO_Init(GPIOD, &GPIO_InitStructure);
-
-// Configure trigger and LED pins
-
-GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2 | GPIO_Pin_3;
-
-GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-
-GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-
-GPIO_Init(GPIOD, &GPIO_InitStructure);
-
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
+    GPIO_InitTypeDef GPIO_InitStructure;
+    GPIO_InitStructure.GPIO_Pin = LED1_PIN | LED2_PIN | LED3_PIN;
+    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+    GPIO_Init(LED_PORT, &GPIO_InitStructure);
 }
 
-int main(void) {
+void compare_2bit(uint8_t a, uint8_t b) {
+    GPIO_ResetBits(LED_PORT, LED1_PIN | LED2_PIN | LED3_PIN);
 
-uint8_t echo_status = 0;
+    if (a > b) {
+        GPIO_SetBits(LED_PORT, LED1_PIN);
+    } else if (a == b) {
+        GPIO_SetBits(LED_PORT, LED2_PIN);
+    } else {
+        GPIO_SetBits(LED_PORT, LED3_PIN);
+    }
+}  
 
-NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+int main(void) {   
+    NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+    SystemCoreClockUpdate();
+    Delay_Init();
+    GPIO_Config();
 
-SystemCoreClockUpdate();
-
-Delay_Init();
-
-GPIO_Config();
-
-while(1) {
-
-// Trigger ultrasonic sensor
-
-GPIO_WriteBit(GPIOD, GPIO_Pin_2, SET);
-
-Delay_Ms(10); // Trigger pulse width
-
-GPIO_WriteBit(GPIOD, GPIO_Pin_2, RESET);
-
-echo_status = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_4);
-
-if (echo_status == 1) {
-
-// Object detected, blink LED
-
-GPIO_WriteBit(GPIOD, GPIO_Pin_3, SET);
-
-Delay_Ms(2000); // LED on duration
-
-GPIO_WriteBit(GPIOD, GPIO_Pin_3, RESET);
-
-Delay_Ms(2000); // LED off duration
-
+    for (uint8_t a = 0; a <= 3; a++) {
+        for (uint8_t b = 0; b <= 3; b++) {
+            compare_2bit(a, b);
+            Delay_Ms(5000);
+        }
+    }
+    
+    return 0;
 }
+</pre>
+</div>
 
-}
+<h2>Project Demonstration</h2>
+<p>A demonstration of the project can be carried out to observe the LED output based on different values of <em>A</em> and <em>B</em>.</p>
 
-}
-Working Principle
-The system operates by sending a short ultrasonic pulse (triggered by PD2) and listening for an echo (received on PD4). The presence of an object within the sensor’s range reflects the pulse back to the sensor, detected as a high signal on the ECHO pin. Upon detection, the processor activates an LED to alert the user of the detected object.
+<h2>Conclusion</h2>
+<p>This implementation demonstrates the use of the VSDSquadron Mini board to design a basic digital circuit. The 2-bit comparator effectively compares two binary numbers and outputs the comparison results through LEDs. This project reinforces the fundamental concepts of digital design. Overall, this project was a valuable learning experience.</p>
 
-<h4>Applications</h4><br>
-<ul>
-<li>Object Detection : Useful in parking assistance systems, robot obstacle avoidance, and proximity detection for home automation.</li>
-<i>Security Systems : Employing ultrasonic sensors for motion detection in restricted areas.</li>
-<li>Distance Measurement : Accurate distance measurements for assembly line spacing, liquid level monitoring, and height measurement of objects.</li>
-<li>Liquid Level Detection : Using ultrasonic sensors to monitor the liquid level inside tanks, preventing unstable readings caused by wavy surfaces or bubbles.</li>
-</ul><br>
- </details>
-
-
-
-
-
-
+</body>
+</html>
+</details>

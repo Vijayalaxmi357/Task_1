@@ -18,9 +18,11 @@
 <li> Launch Virtual Machine on VMBox</li><br>
 <li>Attach the VDI file to the Virtual Machine instance in VMBox</li><br>
 <li>open the Virtual oracle<li></oi><br>
+
 ![image](C:\Users\vijay\Pictures\Screenshots\Screenshot 2024-10-26 120841.png)
 click on  "Show"<br>
  you will Enter to "ubuntu"<br>
+
  ![image](C:\Users\vijay\Pictures\Screenshots\Screenshot 2024-10-26 121056.png)
  -Right click and click on "open terminal"<br>
 

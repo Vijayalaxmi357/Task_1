@@ -572,14 +572,14 @@ Delay_Ms(2000); // LED off duration
 Working Principle
 The system operates by sending a short ultrasonic pulse (triggered by PD2) and listening for an echo (received on PD4). The presence of an object within the sensor’s range reflects the pulse back to the sensor, detected as a high signal on the ECHO pin. Upon detection, the processor activates an LED to alert the user of the detected object.
 
-Applications
-Object Detection : Useful in parking assistance systems, robot obstacle avoidance, and proximity detection for home automation.
-Security Systems : Employing ultrasonic sensors for motion detection in restricted areas.
-Distance Measurement : Accurate distance measurements for assembly line spacing, liquid level monitoring, and height measurement of objects.
-Liquid Level Detection : Using ultrasonic sensors to monitor the liquid level inside tanks, preventing unstable readings caused by wavy surfaces or bubbles.
+<h4>Applications</h4><br>
+<ul>
+<li>Object Detection : Useful in parking assistance systems, robot obstacle avoidance, and proximity detection for home automation.</li>
+<i>Security Systems : Employing ultrasonic sensors for motion detection in restricted areas.</li>
+<li>Distance Measurement : Accurate distance measurements for assembly line spacing, liquid level monitoring, and height measurement of objects.</li>
+<li>Liquid Level Detection : Using ultrasonic sensors to monitor the liquid level inside tanks, preventing unstable readings caused by wavy surfaces or bubbles.</li>
+</ul><br>
  </details>
-
-
 
 
 

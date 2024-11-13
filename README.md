@@ -457,40 +457,10 @@ Type the command spike -d pk sum1ton.c<br>
 <details>
  <summary>
  <h2> TASK-5</h2> 
-<h3>2-bit comparator</h3>
+</summary><br>
  </summary>
  <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2-Bit Comparator Project</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-        .code-block {
-            background-color: #f4f4f4;
-            padding: 15px;
-            border: 1px solid #ddd;
-            overflow-x: auto;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 10px 0;
-        }
-        th, td {
-            padding: 8px;
-            border: 1px solid #ddd;
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
 

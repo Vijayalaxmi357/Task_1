@@ -457,11 +457,10 @@ Type the command spike -d pk sum1ton.c<br>
 <details>
  <summary>
  <h2> TASK-5</h2> 
-</summary><br>
- </summary>
+<h3>2-bit comparator</h3>
+ </summary><br>
  <!DOCTYPE html>
 <html lang="en">
-</head>
 <body>
 
 <h1>2-Bit Comparator Project</h1>
@@ -588,9 +587,8 @@ int main(void) {
 </div>
 
 <h2>Project Demonstration</h2>
+![alt text](image.png)
 <p>A demonstration of the project can be carried out to observe the LED output based on different values of <em>A</em> and <em>B</em>.</p>
-![image](https://github.com/user-attachments/assets/28c84174-d574-453a-b1fd-303c5a7f165c)
-
 
 <h2>Conclusion</h2>
 <p>This implementation demonstrates the use of the VSDSquadron Mini board to design a basic digital circuit. The 2-bit comparator effectively compares two binary numbers and outputs the comparison results through LEDs. This project reinforces the fundamental concepts of digital design. Overall, this project was a valuable learning experience.</p>

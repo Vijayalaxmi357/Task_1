@@ -23,12 +23,7 @@ click on  "Show"<br>
  you will Enter to "ubuntu"<br>
  ![image](C:\Users\vijay\Pictures\Screenshots\Screenshot 2024-10-26 121056.png)
  -Right click and click on "open terminal"<br>
- </details>
-<details>
- <summary>
- <h2> TASK-2 </h2> 
-<h3>Write a simple C code and compile it with gcc comipler. And Compile the same code with RISCV comipler to generate the assembly code for the same. Further Evaluate RISCV assembly code for the sample C code with two different options of comiplation.</h3>
- </summary>
+
 
 
 
@@ -69,7 +64,7 @@ for only required code type "less" and search for" /main"<br>
 
 <details>
  <summary>
- <h2> TASK-3</h2> 
+ <h2> TASK-2</h2> 
 <h3>Spike simulation and observation with -O1 and -Ofast and bulding a simple application using c code using Risc-v Spike</h3>
  </summary>
 
@@ -95,7 +90,7 @@ Type the command spike -d pk sum1ton.c<br>
 
 <details>
  <summary>
- <h2> TASK-4</h2> <br>
+ <h2> TASK-3</h2> <br>
 <h3> 1.RISC-V instruction types</h3><br>
 <h3> 2.Identifying 15 unique RISC-V instructions from riscv-objdmp of application code</h3><br>
 <h3> 3.Identifying exact 32-bit instruction code in the instruction type format for 15 unique instructions</h3><br>

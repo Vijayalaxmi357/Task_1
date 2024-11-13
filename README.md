@@ -587,7 +587,8 @@ int main(void) {
 </div>
 
 <h2>Project Demonstration</h2><br>
-![image](https://github.com/user-attachments/assets/07f7dc6b-23c0-42dd-93a0-0d1c9e33342e)
+![2-bit-Comparator-1024x877](https://github.com/user-attachments/assets/956c6485-024b-463f-965b-fe1c6a193965)
+
 <p>A demonstration of the project can be carried out to observe the LED output based on different values of <em>A</em> and <em>B</em>.</p>
 
 <h2>Conclusion</h2>

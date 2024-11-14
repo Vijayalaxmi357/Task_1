@@ -449,7 +449,31 @@ Type the command spike -d pk sum1ton.c<br>
  <summary>
  <h2> TASK-4</h2> 
 <h3>Functional simulation and waveform using RISC-V verilog netlist and test bench  snapshots.</h3>
- </summary>
+ </summary>Use this RISC-V Core Verilog netlist and testbench for functional simulation experiment and Upload waveform
+***NOTE:** Since the designing of RISCV Architecture and writing it's testbench is not the part of this Research Internship, so we will use the Verilog Code and Testbench of RISCV that has already been designed. The reference GitHub repository is : [iiitb_rv32i](https://github.com/vinayrayapati/rv32i/)***
+Steps to perform functional simulation of RISCV
+Create a new directory mkdir <task>
+
+Create two files by using touch command as task_rv32i.v and task_rv32i_tb.v
+
+
+Copy the code from the reference github repo and paste it in your verilog and testbench files.
+
+
+
+To run and simulate the verilog code, enter the following command:
+
+$ iverilog -o task_rv32i task_rv32i.v task_rv32i_tb.v
+$ ./task_rv32i
+To see the simulation waveform in GTKWave, enter the following command:
+
+$ gtkwave task_rv32i.vcd
+The GTKWave will be opened and following window will be appeared.
+
+
+7.Output Waveform of various instructions that we have covered in TASK-2.
+
+
  </details><br><hr>
 
 <details>

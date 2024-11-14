@@ -1,4 +1,5 @@
 
+
 # VSDSquadronMini Research Internship - 20th October Cohert
  
 <h2>The program is based on RISC-V architecture and uses open-source tools to teach people about VLSI and RISC-V</h2><br>
@@ -612,7 +613,7 @@ int main(void) {
 
 ![image](https://github.com/user-attachments/assets/3abe3671-4746-4acc-aeac-a71ad1e99ef2)<br>
 </body>
-</details>
+</details><br><hr>
 <details>
     <summary>
     <h2> TASK-6</h2> 

@@ -1,5 +1,5 @@
 
- # VSDSquadronMini Research Internship - 20th October Cohert
+# VSDSquadronMini Research Internship - 20th October Cohert
  
 <h2>The program is based on RISC-V architecture and uses open-source tools to teach people about VLSI and RISC-V</h2><br>
 
@@ -611,11 +611,17 @@ int main(void) {
 <h2>Project Demonstration</h2><br>
 
 ![image](https://github.com/user-attachments/assets/3abe3671-4746-4acc-aeac-a71ad1e99ef2)<br>
+</body>
+</details>
+<details>
+    <summary>
+    <h2> TASK-6</h2> 
+   <h3>Demonstration video</h3>
+    </summary><br>
 <p>A demonstration of the project can be carried out to observe the LED output based on different values of <em>A</em> and <em>B</em>.</p>
 
+![video](c:\Users\vijay\Downloads\Comparator project.mhtml)<br>
 <h2>Conclusion</h2>
 <p>This implementation demonstrates the use of the VSDSquadron Mini board to design a basic digital circuit. The 2-bit comparator effectively compares two binary numbers and outputs the comparison results through LEDs. This project reinforces the fundamental concepts of digital design. Overall, this project was a valuable learning experience.</p>
-
-</body>
 </html>
 </details>

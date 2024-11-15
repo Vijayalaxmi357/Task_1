@@ -453,25 +453,28 @@ Type the command spike -d pk sum1ton.c<br>
 ***NOTE:** Since the designing of RISCV Architecture and writing it's testbench is not the part of this Research Internship, so we will use the Verilog Code and Testbench of RISCV that has already been designed. The reference GitHub repository is : [iiitb_rv32i](https://github.com/vinayrayapati/rv32i/)***
 Steps to perform functional simulation of RISCV
 Create a new directory mkdir <task>
+![task](https://github.com/user-attachments/assets/7b3898c0-d59d-45b6-9a04-762f5e5e73f5)
 
 Create two files by using touch command as task_rv32i.v and task_rv32i_tb.v
+![taskrv](https://github.com/user-attachments/assets/572ba230-a4aa-44e3-9122-13b401dcc3f9)
+![taskrvtb](https://github.com/user-attachments/assets/8eae5209-c9b9-4038-9cb3-fb892962194e)
 
 
-Copy the code from the reference github repo and paste it in your verilog and testbench files.
-
-
+Copy the code from the reference github repo and paste it in your verilog and testbench files
 
 To run and simulate the verilog code, enter the following command:
 
 $ iverilog -o task_rv32i task_rv32i.v task_rv32i_tb.v
 $ ./task_rv32i
+![task wave](https://github.com/user-attachments/assets/a9420a99-43fd-430d-9717-8f6959e1ad74)
+
 To see the simulation waveform in GTKWave, enter the following command:
 
 $ gtkwave task_rv32i.vcd
 The GTKWave will be opened and following window will be appeared.
-
-
 7.Output Waveform of various instructions that we have covered in TASK-2.
+![task wave1](https://github.com/user-attachments/assets/47755ff4-9a97-4990-b795-282ecc49a391)
+![task wave 2](https://github.com/user-attachments/assets/480544ff-f549-4cb4-b456-09c1a27521bb)
 
 
  </details><br><hr>

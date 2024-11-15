@@ -627,7 +627,7 @@ int main(void) {
     </summary><br>
 <p>A demonstration of the project can be carried out to observe the LED output based on different values of <em>A</em> and <em>B</em>.</p><br>
 <h4>Project name:</h4><br>
-https://github.com/user-attachments/assets/fb309948-2329-438b-b553-24a1ce3e3ed2
+https://private-user-images.githubusercontent.com/185661786/386667502-431788eb-30d5-4c82-94bd-004c6a1ae2a3.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzE2ODY0OTQsIm5iZiI6MTczMTY4NjE5NCwicGF0aCI6Ii8xODU2NjE3ODYvMzg2NjY3NTAyLTQzMTc4OGViLTMwZDUtNGM4Mi05NGJkLTAwNGM2YTFhZTJhMy5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMTE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTExNVQxNTU2MzRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NGNjMzMzYzVmZTFiMDQ5MDZmMjFjNzA1ZmI4NTdjNjllNGQwNzhmNGE1ODljZWNmMzI3NDc0ZWQxOWMxNjk1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.sXvBEGx_OklBFzNLWsWyEwTcnQGRncAGN_VVmtsrBEY
 
 <h2>Conclusion</h2>
 <p>This implementation demonstrates the use of the VSDSquadron Mini board to design a basic digital circuit. The 2-bit comparator effectively compares two binary numbers and outputs the comparison results through LEDs. This project reinforces the fundamental concepts of digital design. Overall, this project was a valuable learning experience.</p>

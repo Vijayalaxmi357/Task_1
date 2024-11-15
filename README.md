@@ -627,6 +627,7 @@ int main(void) {
     </summary><br>
 <p>A demonstration of the project can be carried out to observe the LED output based on different values of <em>A</em> and <em>B</em>.</p><br>
 <h4>Project name:</h4><br>
+https://github.com/user-attachments/assets/a26ef857-ad8e-4a34-92b7-e85100ae7408
 
 
 <h2>Conclusion</h2>

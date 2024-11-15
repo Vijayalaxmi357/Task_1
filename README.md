@@ -17,16 +17,17 @@
 <li>Install Oracle Virtual Box, VMBox</li><br>
 <li> Launch Virtual Machine on VMBox</li><br>
 <li>Attach the VDI file to the Virtual Machine instance in VMBox</li><br>
-<li>open the Virtual oracle<li></oi><br>
+<li>open the Virtual oracle<li>
 
-![image](C:\Users\vijay\Pictures\Screenshots\Screenshot 2024-10-26 120841.png)<br>
+</oi><br>
+
+![oracle VMBox](https://github.com/user-attachments/assets/ec510c91-5706-4d7f-abd5-e825ae070f5e)<br>
+![login](https://github.com/user-attachments/assets/e4a40158-1875-4eb2-adc1-0f23a57f1025)<br>
 click on  "Show"<br>
  you will Enter to "ubuntu"<br>
-
- ![image](C:\Users\vijay\Pictures\Screenshots\Screenshot 2024-10-26 121056.png)<br>
  -Right click and click on "open terminal"<br>
 
-
+ ![open terminal](https://github.com/user-attachments/assets/0240e637-7e73-43dc-b563-30a3ee793034)<br>
 
 
 ### Step 2: Type the word "gedit"-a word "gedit" is editor
@@ -35,8 +36,6 @@ click on  "Show"<br>
     $   cd <br/>                           Navigate to home directory:<br>
     $   gedit filename.c & <br/>         This opens a blank file with filename.c, type the c code
     
-![oracle VMBox](https://github.com/user-attachments/assets/ec510c91-5706-4d7f-abd5-e825ae070f5e)
-![login](https://github.com/user-attachments/assets/e4a40158-1875-4eb2-adc1-0f23a57f1025)
 
 Save the file<br> 
 Come back to terminal<br>
@@ -45,12 +44,11 @@ To see the results Run the following commands
 
     $    gcc filename.c <br>
     $    ./a.out <br>
-![open terminal](https://github.com/user-attachments/assets/0240e637-7e73-43dc-b563-30a3ee793034)
-![gedit](https://github.com/user-attachments/assets/a6e3c9c5-35de-45fa-8165-34ea4e4307de)
-
+!
 Change the value of n in filename.c <br>
 Recompile and see the results <br>
 To see the code in terminal type as cat sum1ton.c<br>
+
 ![cat sum1ton](https://github.com/user-attachments/assets/615382a8-e491-41a4-affc-dbbf6eb0daa4)
 
 To get riscv assembly code the command is<br>
@@ -630,8 +628,8 @@ int main(void) {
 <p>A demonstration of the project can be carried out to observe the LED output based on different values of <em>A</em> and <em>B</em>.</p><br>
 <h4>Project name:</h4><br>
 
-https://github.com/user-attachments/assets/99e9c600-9e19-492f-8cf8-9d693b7838ef
-
+![image](c:\Users\vijay\OneDrive\Pictures\comparator demonstration.mp4)<br
+>
 <h2>Conclusion</h2>
 <p>This implementation demonstrates the use of the VSDSquadron Mini board to design a basic digital circuit. The 2-bit comparator effectively compares two binary numbers and outputs the comparison results through LEDs. This project reinforces the fundamental concepts of digital design. Overall, this project was a valuable learning experience.</p>
 </html>

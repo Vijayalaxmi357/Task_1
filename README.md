@@ -626,9 +626,7 @@ int main(void) {
    <h3>Demonstration video</h3>
     </summary><br>
 <p>A demonstration of the project can be carried out to observe the LED output based on different values of <em>A</em> and <em>B</em>.</p><br>
-<h3>Project image:</h3><br>
 
-![Project image](https://github.com/user-attachments/assets/c96aa361-6e78-4a18-8965-a815b02b9d4e)<br>
 
 <h3>Project video:</h3> <br>
 

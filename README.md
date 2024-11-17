@@ -632,7 +632,7 @@ int main(void) {
 
 <h3>Project video:</h3> <br>
 
-https://drive.google.com/file/d/1ZbfAjJymzxF_RfFCDB2_vD-2o3NQZLh3/view?usp=sharing <br>
+https://github.com/user-attachments/assets/49d38105-2e3d-4dbd-9f4c-3340abfcd4cc
 
 
 

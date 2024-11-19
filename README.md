@@ -630,7 +630,7 @@ int main(void) {
 
 <h3>Project video:</h3> <br>
 
-https://github.com/user-attachments/assets/49d38105-2e3d-4dbd-9f4c-3340abfcd4cc
+https://github.com/user-attachments/assets/6e5a2bb7-abcf-4096-a22d-263913a8cd85
 
 
 
